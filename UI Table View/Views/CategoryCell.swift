@@ -14,6 +14,11 @@ class CategoryCell: UITableViewCell {
     @IBOutlet weak var categoryTitle:UILabel!
     
     
+    // Let the view manage itself.
+    // Give it the {data, model, The struct the represent the data}
+    
+    // category: is a struct that contains
+    // the needed information for populating a cell
     func updateViews(category: Category) {
         self.categoryImage.image = UIImage(named: category.imageName)
         self.categoryTitle.text = category.title

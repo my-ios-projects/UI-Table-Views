@@ -14,8 +14,9 @@ class CategoriesViewController: UIViewController,
 {
 
     
-    // TableView Outlet
+    // TableView Object|Outlet
     @IBOutlet weak var categoryTable: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,14 +25,16 @@ class CategoriesViewController: UIViewController,
         categoryTable.delegate = self
     }
 
-    func tableView(_ tableView: UITableView,
-                   numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, // The table object
+                   numberOfRowsInSection section: Int)
+        -> Int {
         return DataService.instance.getCategories().count
     }
     
     
-    func tableView(_ tableView: UITableView,
-                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, // The table object
+                   cellForRowAt indexPath: IndexPath)
+        -> UITableViewCell {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "category_cell_id") as? CategoryCell {
             let categoryAtRow = DataService.instance.getCategories()[indexPath.row]

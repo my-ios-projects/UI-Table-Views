@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,16 +24,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SHOP BY CATEGORIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAl-nL-ZcO">
-                                <rect key="frame" x="16" y="30" width="197.5" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOP BY CATEGORIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAl-nL-ZcO">
+                                <rect key="frame" x="16" y="30" width="198" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.56916243654822329" green="0.56916243654822329" blue="0.56916243654822329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="182" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kN3-xO-tRu">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="182" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kN3-xO-tRu">
                                 <rect key="frame" x="0.0" y="75" width="375" height="528"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="category_cell_id" rowHeight="182" id="nN0-Hb-jzM" customClass="CategoryCell" customModule="UI_Table_View" customModuleProvider="target">
@@ -42,19 +41,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="182"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bentley0" translatesAutoresizingMaskIntoConstraints="NO" id="4FZ-kE-Pvt">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bentley0" translatesAutoresizingMaskIntoConstraints="NO" id="4FZ-kE-Pvt">
                                                     <rect key="frame" x="0.0" y="3" width="375" height="176"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHIRTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0A-qk-0UB">
-                                                    <rect key="frame" x="150" y="76" width="74" height="30.5"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SHIRTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0A-qk-0UB">
+                                                    <rect key="frame" x="11" y="3" width="117" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="4FZ-kE-Pvt" firstAttribute="centerX" secondItem="Z0A-qk-0UB" secondAttribute="centerX" id="5Qm-TN-NhP"/>
-                                                <constraint firstItem="4FZ-kE-Pvt" firstAttribute="centerY" secondItem="Z0A-qk-0UB" secondAttribute="centerY" id="B0m-7x-vfc"/>
                                                 <constraint firstItem="4FZ-kE-Pvt" firstAttribute="top" secondItem="oZy-6y-2TN" secondAttribute="top" constant="3" id="MIu-4U-yaL"/>
                                                 <constraint firstAttribute="trailing" secondItem="4FZ-kE-Pvt" secondAttribute="trailing" id="fdm-ch-hgJ"/>
                                                 <constraint firstAttribute="bottom" secondItem="4FZ-kE-Pvt" secondAttribute="bottom" constant="3" id="iiS-Fe-vzq"/>
@@ -70,6 +68,15 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kN3-xO-tRu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lfa-Yw-Rss"/>
+                            <constraint firstItem="kN3-xO-tRu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TA6-ZC-f2O"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oAl-nL-ZcO" secondAttribute="trailingMargin" id="XAw-od-93a"/>
+                            <constraint firstItem="oAl-nL-ZcO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="faj-yA-cat"/>
+                            <constraint firstItem="kN3-xO-tRu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oYf-Yw-0FP"/>
+                            <constraint firstItem="kN3-xO-tRu" firstAttribute="top" secondItem="oAl-nL-ZcO" secondAttribute="bottom" constant="22" id="qwP-y1-asa"/>
+                            <constraint firstItem="oAl-nL-ZcO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xDC-s9-KAo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Taha's Car Shop" id="3zI-fv-1Hf"/>

@@ -32,8 +32,8 @@ class DataService {
         Category(title: "Mercedes", imageName: "Mercedes"),
         Category(title: "Rolls Royce ", imageName: "Rolls0"),
         Category(title: "Volvo", imageName: "Volvo"),
-        Category(title: "bmw5", imageName: "bmw5"),
-        Category(title: "a8", imageName: "a8"),
+        Category(title: "BMW", imageName: "bmw5"),
+        Category(title: "Audi", imageName: "a8"),
     ]
     
     

@@ -15,6 +15,8 @@ import Foundation
 //   each will be a struct inside the Model directory.
 // - Those abstractions can be used in another places.
 
+// Model: is all the types that represent data.
+
 struct  Category {
     
     // Struct Members

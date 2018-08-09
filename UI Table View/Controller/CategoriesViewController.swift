@@ -24,12 +24,15 @@ class CategoriesViewController: UIViewController,
         categoryTable.dataSource = self
         categoryTable.delegate = self
     }
+    
+    
+    
 
     func tableView(_ tableView: UITableView, // The table object
                    numberOfRowsInSection section: Int)
         -> Int {
         return DataService.instance.getCategories().count
-    }
+    } // end numberOfRowsInSection
     
     
     func tableView(_ tableView: UITableView, // The table object
@@ -39,21 +42,14 @@ class CategoriesViewController: UIViewController,
         if let cell = tableView.dequeueReusableCell(withIdentifier: "category_cell_id") as? CategoryCell {
             let categoryAtRow = DataService.instance.getCategories()[indexPath.row]
             cell.updateViews(category: categoryAtRow)
-            print(categoryAtRow.imageName)
             return cell
         } // end if
         else {
             return CategoryCell()
-        }
+        } // end else
         
-    }
+    } // end cellForRowAt indexPath
     
 
-    
-    
-    
-    
-    
-    
-}
+} // end class
 

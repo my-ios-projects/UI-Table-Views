@@ -34,7 +34,7 @@ class DataService {
         Category(title: "Volvo", imageName: "Volvo"),
         Category(title: "BMW", imageName: "bmw5"),
         Category(title: "Audi", imageName: "a8"),
-    ]
+        ]
     
     
     // * return the array of category struct

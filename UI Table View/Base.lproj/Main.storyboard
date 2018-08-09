@@ -12,6 +12,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
             <string>Avenir-Heavy</string>
         </array>
     </customFonts>
@@ -82,54 +83,80 @@
                     <navigationItem key="navigationItem" title="Taha's Car Shop" id="3zI-fv-1Hf"/>
                     <connections>
                         <outlet property="categoryTable" destination="kN3-xO-tRu" id="f8Q-zl-2MX"/>
-                        <segue destination="nZr-o3-ZYX" kind="show" id="TBH-cA-Q9u"/>
+                        <segue destination="nZr-o3-ZYX" kind="show" identifier="car_brand_segue_id" id="TBH-cA-Q9u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1342" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Car Brand View Controller-->
         <scene sceneID="aD3-fj-Sdb">
             <objects>
-                <viewController id="nZr-o3-ZYX" sceneMemberID="viewController">
+                <viewController id="nZr-o3-ZYX" customClass="CarBrandViewController" customModule="UI_Table_View" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZEV-Ua-PKL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brand Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKr-CJ-6Y2">
-                                <rect key="frame" x="16" y="30" width="106" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cars of Brand X" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKr-CJ-6Y2">
+                                <rect key="frame" x="16" y="30" width="134" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="gIO-sj-u9N"/>
-                                    <constraint firstAttribute="width" constant="106" id="pdP-PS-5kI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.56916243649999998" green="0.56916243649999998" blue="0.56916243649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e97-YV-cbI">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e97-YV-cbI">
                                 <rect key="frame" x="0.0" y="75" width="375" height="528"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7W2-12-tbW">
-                                    <size key="itemSize" width="182" height="250"/>
+                                    <size key="itemSize" width="182" height="273"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="r5g-Q4-wkS">
-                                        <rect key="frame" x="0.0" y="0.0" width="182" height="250"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cars_of_brand" id="r5g-Q4-wkS" customClass="CarOfBrandCell" customModule="UI_Table_View" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="273"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="182" height="250"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="182" height="273"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cls0" translatesAutoresizingMaskIntoConstraints="NO" id="Umo-Ul-mw0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mercedes-Benz CLS Coupe " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjT-Fa-74Y">
+                                                    <rect key="frame" x="11" y="190" width="162" height="45"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$200,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cT-Ch-F7l">
+                                                    <rect key="frame" x="11" y="243" width="151" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
+                                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="carImage" destination="Umo-Ul-mw0" id="D9s-bL-q5P"/>
+                                            <outlet property="price" destination="4cT-Ch-F7l" id="iSh-Tk-dwd"/>
+                                            <outlet property="title" destination="CjT-Fa-74Y" id="qC0-sW-Zjh"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jKr-CJ-6Y2" secondAttribute="trailing" constant="20" symbolic="YES" id="Acz-c2-WKy"/>
                             <constraint firstItem="6EP-os-MlI" firstAttribute="bottom" secondItem="e97-YV-cbI" secondAttribute="bottom" id="CvX-TS-R7s"/>
                             <constraint firstItem="jKr-CJ-6Y2" firstAttribute="leading" secondItem="6EP-os-MlI" secondAttribute="leading" constant="16" id="DA9-lX-GYA"/>
                             <constraint firstItem="6EP-os-MlI" firstAttribute="trailing" secondItem="e97-YV-cbI" secondAttribute="trailing" id="Hr3-Da-abu"/>
@@ -139,6 +166,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6EP-os-MlI"/>
                     </view>
+                    <connections>
+                        <outlet property="brandCarCollection" destination="e97-YV-cbI" id="lmC-ey-Z6v"/>
+                        <outlet property="brandLabel" destination="jKr-CJ-6Y2" id="OJk-nl-YCF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dc-Nm-aL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,5 +201,6 @@
     </scenes>
     <resources>
         <image name="Bentley0" width="788" height="525"/>
+        <image name="cls0" width="2400" height="1600"/>
     </resources>
 </document>

@@ -48,8 +48,10 @@ class DataService {
         Car(name: "Bentley Continental GT Speed 2020", price: "$100,000,000", imageName: "bentega_0")
     ]
     
+    private let mercdeses = [
+        Car(name: "Mercedes-Benz C400 2018", price: "$50,000", imageName: "c400")
+    ]
     private let bmws = [Car]()
-    private let mercdeses = [Car]()
     private let porsches = [Car]()
     private let volvos = [Car]()
     private let rollses = [Car]()

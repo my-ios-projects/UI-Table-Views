@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0FE3AAD22119F06D00B09567 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE3AAD12119F06D00B09567 /* Assets.xcassets */; };
+		0FE3AAD4211CD37900B09567 /* CarOfBrandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3AAD3211CD37900B09567 /* CarOfBrandCell.swift */; };
+		0FE3AAD6211CD8D100B09567 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3AAD5211CD8D100B09567 /* Car.swift */; };
+		0FE3AAD8211CE31300B09567 /* CarBrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3AAD7211CE31300B09567 /* CarBrandViewController.swift */; };
 		0FED1DE021075BA9003B667E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FED1DDF21075BA9003B667E /* AppDelegate.swift */; };
 		0FED1DE221075BA9003B667E /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FED1DE121075BA9003B667E /* CategoriesViewController.swift */; };
 		0FED1DE521075BA9003B667E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FED1DE321075BA9003B667E /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		0FE3AAD12119F06D00B09567 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../picking image/picking image/Assets.xcassets"; sourceTree = "<group>"; };
+		0FE3AAD3211CD37900B09567 /* CarOfBrandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarOfBrandCell.swift; sourceTree = "<group>"; };
+		0FE3AAD5211CD8D100B09567 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		0FE3AAD7211CE31300B09567 /* CarBrandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBrandViewController.swift; sourceTree = "<group>"; };
 		0FED1DDC21075BA9003B667E /* UI Table View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI Table View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FED1DDF21075BA9003B667E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FED1DE121075BA9003B667E /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				0FED1DF821076A4D003B667E /* CategoryCell.swift */,
+				0FE3AAD3211CD37900B09567 /* CarOfBrandCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -85,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				0FED1DFB21078AB1003B667E /* Category.swift */,
+				0FE3AAD5211CD8D100B09567 /* Car.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				0FED1DE121075BA9003B667E /* CategoriesViewController.swift */,
+				0FE3AAD7211CE31300B09567 /* CarBrandViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,9 +187,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FED1DE221075BA9003B667E /* CategoriesViewController.swift in Sources */,
+				0FE3AAD4211CD37900B09567 /* CarOfBrandCell.swift in Sources */,
 				0FED1DE021075BA9003B667E /* AppDelegate.swift in Sources */,
+				0FE3AAD8211CE31300B09567 /* CarBrandViewController.swift in Sources */,
 				0FED1DF921076A4D003B667E /* CategoryCell.swift in Sources */,
 				0FED1DFC21078AB1003B667E /* Category.swift in Sources */,
+				0FE3AAD6211CD8D100B09567 /* Car.swift in Sources */,
 				0FED1DFF21078BFA003B667E /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

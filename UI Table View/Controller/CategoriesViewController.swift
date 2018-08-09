@@ -47,9 +47,34 @@ class CategoriesViewController: UIViewController,
         else {
             return CategoryCell()
         } // end else
-        
     } // end cellForRowAt indexPath
     
+    
+    
+    
+    // * Runs when the user selects a table cell
+    // * indexPath.row is the index of the selected table cell.
+    func tableView(_ tableView: UITableView,
+                   didSelectRowAt indexPath: IndexPath) {
+        
+        let category  = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier: "car_brand_segue_id", sender: category)
+    }
+    
+    
+    // segue: ...
+    // sender: ...
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let carsOfBrandView = segue.destination as? CarBrandViewController
+        {
+            carsOfBrandView.initViewFromPreviousView(carBrand: sender as! Category)
+
+            
+        } // end if
+        
+        
+    } // end prepare
 
 } // end class
 

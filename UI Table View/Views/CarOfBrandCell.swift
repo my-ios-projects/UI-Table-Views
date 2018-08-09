@@ -10,4 +10,7 @@ import UIKit
 
 class CarOfBrandCell: UICollectionViewCell {
     
-}
+    @IBOutlet weak var carImage: UIImageView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var price: UILabel!
+} // end class

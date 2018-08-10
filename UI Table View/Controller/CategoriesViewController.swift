@@ -70,7 +70,6 @@ class CategoriesViewController: UIViewController,
         {
             carsOfBrandView.initViewFromPreviousView(carBrand: sender as! Category)
 
-            
         } // end if
         
         

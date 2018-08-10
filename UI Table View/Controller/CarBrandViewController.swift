@@ -42,7 +42,7 @@ class CarBrandViewController: UIViewController,
     func initViewFromPreviousView(carBrand: Category) {
         
         self.viewLabelBrandName = carBrand.title
-        carsOfBrand = DataService.instance.getCarsOfBrand(title: carBrand.title)
+        self.carsOfBrand = DataService.instance.getCarsOfBrand(title: carBrand.title)
         
     } // end initViewFromPreviousView
     
